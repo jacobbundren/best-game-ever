@@ -1,0 +1,67 @@
+$glyph-color: rgba(62,66,54,1);
+
+// Glyph
+.glyph-top {
+  height: 25vh;
+  width: 70vw;
+  border-color: rgba(0,0,0,0) rgba(0,0,0,0) $glyph-color rgba(0,0,0,0);
+  border-width: 0 100vh 70vw 100vh;
+  opacity: 0.9;
+}
+
+.glyph-bottom {
+  height: 25vh;
+  width: 70vw;
+  border-color: $glyph-color rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+  border-width: 70vw 100vh 0 100vh;
+  opacity: 0.9;
+}
+
+.glyph-button {
+  opacity: 0.9;
+  height: 50vh;
+  width: 70vw;
+  z-index: 2;
+}
+
+.glyph-border {
+  font-size: 76vh;
+  color: white;
+  z-index: 1;
+}
+
+.countdown {
+  font-size: 24vh;
+  color: white;
+  horizontal-align: center;
+  z-index: 3;
+}
+
+.glyph__container {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.glyph__option {
+  color: white;
+  opacity: 0.9;
+  background-color: rgba(62,66,54,0.75);
+  border-color: white;
+  border-width: 1vw;
+  font-size: 14vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-weight: bold;
+}
+
+.glyph__option--left {
+  @extend .glyph__option;
+  text-align: right;
+}
+
+.glyph__option--right {
+  @extend .glyph__option;
+  text-align: left;
+}

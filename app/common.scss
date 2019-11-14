@@ -1,0 +1,157 @@
+@import '~nativescript-theme-core/scss/dark.scss';
+@import '~nativescript-theme-core/scss/skins/dark/index.scss';
+@import 'variables.scss';
+
+// Font-Awesome styling for material icons
+.fa {
+    font-family: FontAwesome, fontawesome-webfont;
+}
+
+.icon {
+  font-family: icomoon;
+}
+
+// GameEngine
+.gameEngine {
+  background-color: $background;
+}
+
+// Buttons
+.button {
+    horizontal-align: center;
+    vertical-align: center;
+    text-align: center;
+    height: $button-height;
+    background-color: $button-background-color;
+    border-color: $button-border-color;
+    border-width: $button-border-width;
+    font-size: $button-font-size;
+    color: $button-text-color;
+    margin-bottom: 10vh;
+}
+
+.button__container {
+    horizontal-align: center;
+    vertical-align: center;
+    width: 50%;
+}
+
+.button__text {
+    @extend .button;
+    border-radius: 10vmax;
+}
+
+.button__icon {
+    @extend .fa;
+    @extend .button;
+    height: $icon-height;
+    width: $icon-width;
+    border-radius: 26vmax;
+    font-size: $icon-font-size;
+}
+
+.button__play {
+    @extend .button__text;
+    width: 90%;
+}
+
+.button__newGame {
+    @extend .button__text;
+    width: 75%;
+}
+
+// Home
+.homePage {
+    background-image: url("~/assets/scenes/tatooine-sunset-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// Scene
+.scene {
+    height: 100%;
+    width: 100%;
+}
+
+// Characters
+.character {
+    height: 350vh;
+    width: 175vw;
+}
+
+.character__luke {
+  height: 550vh;
+  width: 300vw;
+}
+
+.character__sadluke {
+  height: 550vh;
+  width: 300vw;
+  opacity: 0;
+}
+
+.character__leiahologram {
+  height: 300vh;
+  width: 125vw;
+  opacity: 0;
+}
+
+.character__saber {
+  height: 50vh;
+  width: 15vw;
+  opacity: 0;
+}
+
+.character__c3po {
+  height: 500vh;
+  width: 275vw;
+}
+
+.character__r5d4 {
+  height: 300vh;
+  width: 150vw;
+}
+
+.character__jawa {
+  height: 400vh;
+  width: 200vw;
+}
+
+.character__riff {
+  height: 600vh;
+  width: 300vw;
+}
+
+.character__starwars {
+  height: 800vh;
+  width: 500vw;
+  opacity: 0;
+}
+
+.character__speeder {
+  height: 600vh;
+  width: 300vw;
+}
+
+.character__gameover {
+  height: 600vh;
+  width: 300vw;
+  opacity: 0;
+}
+
+.explosion {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+}
+
+// Overlay
+.overlay {
+    margin: 10vmax;
+}
+
+.dialog__containerPadding {
+    padding-bottom: 20vmax;
+    padding-right: 20vmax;
+    padding-left: 20vmax;
+}

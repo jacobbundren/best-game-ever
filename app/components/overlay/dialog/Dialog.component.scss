@@ -1,0 +1,19 @@
+.dialog__container {
+    height: 60vh;
+    color: white;
+    background-color: rgba(62,66,54,0.75);
+    opacity: 0.9;
+    border-color: white;
+    border-width: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.speaker-name {
+    width: 75vw;
+    vertical-align: top;
+}
